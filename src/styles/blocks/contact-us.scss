@@ -25,6 +25,7 @@
 
   &__field {
     margin-bottom: 16px;
+
     &--textarea {
       margin-bottom: 32px;
     }
@@ -54,17 +55,22 @@
   }
 
   &__info-link {
-    position: relative;
     font-family: 'Space Mono', monospace;
     font-style: normal;
     font-weight: 400;
     color: #191919;
+  }
+}
+
+.info-link {
+  &__text {
+    position: relative;
 
     &::after {
       content: '';
       position: absolute;
       display: block;
-      bottom: -4px;
+      bottom: -2px;
       width: 100%;
       border: 1px solid;
       border-color: $main-color;
@@ -73,11 +79,9 @@
       transform-origin: left;
       transition: transform $effct-duration;
     }
+  }
 
-    &:hover::after {
-      transform: scale(1);
-    }
+  &:hover &__text::after {
+    transform: scale(1);
   }
 }
-
-
