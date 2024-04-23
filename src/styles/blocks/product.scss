@@ -3,7 +3,7 @@
     width: 100%;
     margin-bottom: 24px;
     border-radius: 4px;
-    transition: transform $effctDuration;
+    transition: transform $effct-duration;
 
     &:hover {
       transform: scale(1.1);
@@ -28,7 +28,7 @@
 
       transform: scale(0);
       transform-origin: left;
-      transition: transform $effctDuration;
+      transition: transform $effct-duration;
     }
 
     &:hover::after {

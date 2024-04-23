@@ -9,7 +9,7 @@
 
   @include hover(transform, scale(1.2));
 
-  @include onTablet {
+  @include on-tablet {
     height: 32px;
     width: 32px;
   }
@@ -21,7 +21,7 @@
 
   &--menu {
     background-image: url(../images/icon/menu.svg);
-    transition: background-image $effctDuration;
+    transition: background-image $effct-duration;
 
     &:hover {
       background-image: url(../images/icon/menu-hover.svg)
@@ -47,10 +47,10 @@
 
     opacity: 0;
     pointer-events: none;
-    transition: opacity $effctDuration;
+    transition: opacity $effct-duration;
   }
 
-  @include onDesktop {
+  @include on-desktop {
     &:hover &__tooltip {
       opacity: 1;
       pointer-events: all;

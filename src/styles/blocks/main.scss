@@ -6,18 +6,18 @@
     row-gap: 96px;
     padding: 64px 0 96px;
 
-    @include onTablet {
+    @include on-tablet {
       row-gap: 120px;
       padding-block: 120px;
     }
   }
 
   &__button-wrapper {
-    @include pageGrid;
+    @include page-grid;
   }
 
   &__button {
-    @include onDesktop {
+    @include on-desktop {
       grid-column: span 4;
     }
   }

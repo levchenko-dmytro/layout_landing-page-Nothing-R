@@ -3,11 +3,11 @@
   height: 200px;
   background-image: url(../images/footer.png);
 
-  @include onTablet {
+  @include on-tablet {
     height: 400px;
   }
 
-  @include onDesktop {
+  @include on-desktop {
     height: 460px;
   }
 }
