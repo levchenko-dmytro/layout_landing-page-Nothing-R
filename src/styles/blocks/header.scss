@@ -1,0 +1,36 @@
+.header {
+  background-image: url(../images/header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+
+  @include onDesktop {
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 36px;
+    line-height: 100%;
+
+    @include onTablet {
+      font-size: 48px;
+      line-height: 100%;
+    }
+  }
+
+  &__bottom {
+    padding-bottom: 40px;
+
+    @include onTablet {
+      padding-bottom: 64px;
+    }
+  }
+}

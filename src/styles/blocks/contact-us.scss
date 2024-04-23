@@ -1,0 +1,86 @@
+.contact-us {
+  &__wrapper {
+    @include pageGrid;
+  }
+
+  &__content {
+    margin-bottom: 48px;
+    grid-column: span 2;
+
+    @include onTablet {
+      margin-bottom: 80px;
+      grid-column: span 6;
+    }
+
+    @include onDesktop {
+      margin-bottom: 0;
+      grid-column: span 5;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__field {
+    margin-bottom: 16px;
+    &--textarea {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__info-content {
+    grid-column: span 2;
+
+    @include onTablet {
+      grid-column: span 6;
+    }
+
+    @include onDesktop {
+      grid-column: 7 / -1;
+    }
+  }
+
+  &__info-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+
+  &__info-title {
+    margin-bottom: 8px;
+
+    color: #9393A3;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  &__info-link {
+    position: relative;
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    color: #191919;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      bottom: -4px;
+      width: 100%;
+      border: 1px solid;
+      border-color: $main-color;
+
+      transform: scale(0);
+      transform-origin: left;
+      transition: transform $effctDuration;
+    }
+
+    &:hover::after {
+      transform: scale(1);
+    }
+  }
+}
+
+
